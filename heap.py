@@ -36,5 +36,10 @@ def swap (array, indx1, indx2):
 
 # Function that sorts array using the heapify function defined above.
 # Takes in one Param: an array to be sorted.
-def heapSort (array):	
+def heapSort (array):
+	# Array length
+	size = len(array)
+
+# # Loop through each parent node set to a Max-Heap
+# for i in range()	
 
