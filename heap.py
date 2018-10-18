@@ -5,3 +5,7 @@ print("Heapsort!")
 def heapify (array, i, size):
 	# Assume largest element is the parent node; Initialize largest var to parent indx.
 	largest = i
+
+	# Left child node indx
+	l = (i * 2) + 1
+	
