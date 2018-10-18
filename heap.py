@@ -11,3 +11,7 @@ def heapify (array, i, size):
 
 	# Right child node indx.
 	r = (i * 2) + 2
+
+	# Reinitialize largest var to left child indx if element larger; Make sure indx falls in array first.
+	if (l > size and array[l] > array[largest]):
+		largest = l
