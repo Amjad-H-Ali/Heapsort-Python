@@ -1,6 +1,7 @@
 print("Heapsort!")
 
 # Function to create Max-Heap
+# Meaning, the parent node is larger than its children.
 # Takes three Params: array, array indx, and array size
 def heapify (array, i, size):
 	# Assume largest element is the parent node; Initialize largest var to parent indx.
@@ -24,4 +25,12 @@ def heapify (array, i, size):
 	if (largest != i):
 		swap(array, array[largest], array[i])
 
-		heapify(array, largest, size)	
+		heapify(array, largest, size)
+
+# Simple Swap function
+# Swaps given elements in array when called
+def swap (array, indx1, indx2):
+	temp = array[indx1]
+	array[indx1] = array[indx2]
+	array[indx2] = temp
+	
