@@ -40,6 +40,8 @@ def heapSort (array):
 	# Array length
 	size = len(array)
 
-# # Loop through each parent node set to a Max-Heap
-# for i in range()	
+	# Loop through each parent node and Max-Heapify
+	for indx in range((int(size/2)) - 1, -1, -1):
+		heapify(array, indx, size)
+	
 
