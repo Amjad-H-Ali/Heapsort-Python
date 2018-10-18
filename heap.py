@@ -33,4 +33,8 @@ def swap (array, indx1, indx2):
 	temp = array[indx1]
 	array[indx1] = array[indx2]
 	array[indx2] = temp
-	
+
+# Function that sorts array using the heapify function defined above.
+# Takes in one Param: an array to be sorted.
+def heapSort (array):	
+
