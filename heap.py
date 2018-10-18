@@ -19,3 +19,9 @@ def heapify (array, i, size):
 	# Reinitialize largest var to right child indx if element larger; Make sure indx falls in array first.
 	if (r < size and array[r] > array[largest]):
 		largest = r
+
+	# If largest element was not the parent, then swap elements and use recursion to repeat the whole process.
+	if (largest != i):
+		swap(array, array[largest], array[i])
+
+		heapify(array, largest, size)	
