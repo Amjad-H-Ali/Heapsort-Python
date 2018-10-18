@@ -36,7 +36,7 @@ def swap (array, indx1, indx2):
 
 # Function that sorts array using the heapify function defined above.
 # Takes in one Param: an array to be sorted.
-def heapSort (array):
+def heap_sort (array):
 	# Array length
 	size = len(array)
 
@@ -46,7 +46,12 @@ def heapSort (array):
 
 	# Once in Max-Heap, swap last node and root node, 'delete' last node, Max-heapify effected array,
 	# than repeat process until no nodes left.
-	for indx in range(size - 1, -1, -1)
+	for indx in range(size - 1, -1, -1):
 		swap(array, indx, 0)
 
 		heapify(array, 0, indx)
+
+	return array
+
+print(heap_sort([31, 7, 2, 9, 4, 32, 0, 0, 54, 45, 62, 61, 9, 6, 3]))	
+		
