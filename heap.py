@@ -23,7 +23,7 @@ def heapify (array, i, size):
 
 	# If largest element was not the parent, then swap elements and use recursion to repeat the whole process.
 	if (largest != i):
-		swap(array, array[largest], array[i])
+		swap(array,largest, i)
 
 		heapify(array, largest, size)
 
@@ -43,5 +43,10 @@ def heapSort (array):
 	# Loop through each parent node and Max-Heapify
 	for indx in range((int(size/2)) - 1, -1, -1):
 		heapify(array, indx, size)
-	
 
+	# Once in Max-Heap, swap last node and root node, 'delete' last node, Max-heapify effected array,
+	# than repeat process until no nodes left.
+	for indx in range(size - 1, -1, -1)
+		swap(array, indx, 0)
+
+		heapify(array, 0, indx)
